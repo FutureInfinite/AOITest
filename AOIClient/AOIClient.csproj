@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Connections.Client" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Connections.Common" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="7.0.11" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Features" Version="7.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+</Project>

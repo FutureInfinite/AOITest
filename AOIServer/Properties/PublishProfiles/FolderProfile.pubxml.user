@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>G:\Development\Tests\AOI\Deploy</_PublishTargetUrl>
+    <History>True|2023-09-14T14:17:10.0283859Z;True|2023-09-14T10:09:53.2131572-04:00;True|2023-09-14T09:58:16.4394921-04:00;True|2023-09-13T22:28:27.1586227-04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

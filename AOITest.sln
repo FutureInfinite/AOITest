@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOIClient", "AOIClient\AOIClient.csproj", "{FB97850D-5427-4508-80FD-4871077FE4BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOIServer", "AOIServer\AOIServer.csproj", "{398800C7-5B4E-40B9-AC7C-4B998F2D2BD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5AAC98C1-D93E-415C-AA01-CF1466CE029C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB97850D-5427-4508-80FD-4871077FE4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB97850D-5427-4508-80FD-4871077FE4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB97850D-5427-4508-80FD-4871077FE4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB97850D-5427-4508-80FD-4871077FE4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398800C7-5B4E-40B9-AC7C-4B998F2D2BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398800C7-5B4E-40B9-AC7C-4B998F2D2BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398800C7-5B4E-40B9-AC7C-4B998F2D2BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398800C7-5B4E-40B9-AC7C-4B998F2D2BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F829CD0-A5EA-42BA-8161-DE6C3AC47E3F}
+	EndGlobalSection
+EndGlobal
