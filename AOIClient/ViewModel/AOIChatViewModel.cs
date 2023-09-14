@@ -74,6 +74,7 @@ namespace AOIClient.ViewModel
             ccUserNotRegistered = -1,
             ccUserNotConnected = -2,
             ccUserAlreadyConnected = -3,
+            ccUserAlreadyParametersIncorrect = -4,
             ccSucceeded = 1
         }
 
@@ -186,6 +187,10 @@ namespace AOIClient.ViewModel
 
                     case ConnectResult.ccUserNotConnected:
                         ActivityEvent("User not connected");
+                    break;
+
+                    case ConnectResult.ccUserAlreadyParametersIncorrect:
+                        ActivityEvent("Parameters not connected");
                     break;
 
                     default:

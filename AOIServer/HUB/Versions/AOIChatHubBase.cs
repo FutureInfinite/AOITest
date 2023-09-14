@@ -130,15 +130,23 @@ namespace AOIServer.HUB.Versions
                     }
                     else
                     {
-                        //configure this user to this connection
-                        Connections[ConnectID] =
+
+                        if (ExistChater.Password != null && ExistChater.Password.Equals(Password))
+                        {
+                            //configure this user to this connection
+                            Connections[ConnectID] =
                             new ConnectedUser()
                             {
                                 Connected = true,
                                 LoginUser = ExistChater
                             };
 
-                        Result = 1;
+                            Result = 1;
+                        }
+                        else
+                        {
+                            Result = -4;
+                        }                                                   
                     }
                 }
                 else
