@@ -1,6 +1,7 @@
 ﻿using AOIServer.HUB.Interfaces;
 using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
+using System.Linq;
 
 
 namespace AOIServer.HUB.Versions
@@ -113,6 +114,7 @@ namespace AOIServer.HUB.Versions
         {
             int Result = 0;
             Chater? ExistChater;
+            ConnectedUser ActiveChater;
 
 
             ExistChater = Chaters.Where(chater => chater.ID == ID).FirstOrDefault();
@@ -121,7 +123,14 @@ namespace AOIServer.HUB.Versions
             {
                 var ConnectID = Context.ConnectionId.Trim().ToLower();
 
-                if (Connections.ContainsKey(Context.ConnectionId.Trim().ToLower())) //validate connection to pusher
+                ActiveChater = Connections.Where(connection => connection.Value != null && connection.Value.LoginUser.ID == ID).FirstOrDefault().Value;
+
+                if (ActiveChater != null && ActiveChater.Connected)
+                {
+                    //already connected
+                    Result = -3;
+                }
+                else if (Connections.ContainsKey(Context.ConnectionId.Trim().ToLower())) //validate connection to pusher
                 {
                     if (Connections[ConnectID] != null && Connections[ConnectID]?.Connected == true)
                     {
