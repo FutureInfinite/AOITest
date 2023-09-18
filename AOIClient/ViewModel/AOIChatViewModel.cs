@@ -358,12 +358,7 @@ namespace AOIClient.ViewModel
             }
             return HubConnected;
         }
-
-        private void Test()
-        {
-
-        }
-
+        
         protected virtual void StopHubConnection()
         {
             try
