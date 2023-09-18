@@ -262,7 +262,7 @@ namespace AOIClient.ViewModel
                         {
                             ActivityEvent("Error occurred connecting to chat server");
                             ActivityEvent(task.Exception.Message);
-                            if (task.Exception != null) ActivityEvent(task.Exception.InnerException.Message);
+                            if (task.Exception.InnerException != null) ActivityEvent(task.Exception.InnerException.Message);
 
                             exception = task.Exception;
                             except = task.Exception?.InnerException;
